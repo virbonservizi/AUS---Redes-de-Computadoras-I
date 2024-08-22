@@ -1,0 +1,110 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\cfoot{\thepage} % Center Foot
+
+\title{Introducción a Packet Tracer}
+\author{Virginia Bonservizi\\
+        virbonservizi@gmail.com
+}
+
+\begin{document}
+
+
+
+\maketitle
+
+
+\section{Packet Tracer}
+Cisco Packet Tracer es una herramienta de simulación de redes desarrollada por Cisco Systems. Permite a los usuarios diseñar, configurar y probar redes virtuales sin la necesidad de hardware físico.
+\subsection{Herramientas basicas}
+
+\begin{itemize}
+    \item \textbf{Routers:} Dispositivos de red que gestionan el tráfico entre diferentes redes.
+    \item \textbf{Switches:} Dispositivos de red que conectan varios dispositivos dentro de la misma red local.
+    \item \textbf{Hubs:} Dispositivos de red que retransmiten datos a todos los dispositivos conectados sin filtrar ni gestionar el tráfico.
+    \item \textbf{PCs y Servidores:} Dispositivos finales que pueden enviar y recibir datos en la red.
+    \item \textbf{Cables:} Son utilizados para conectar dispositivos finales y dispositivos de red
+\end{itemize}
+
+\subsection{Modos de operación}
+
+\begin{itemize}
+    \item \textbf{Modo de Diseño:} Es el modo predeterminado al abrir Packet Tracer. Aquí se puede arrastrar y soltar dispositivos en el espacio de trabajo y conectarlos. Se pueden utilizar las herramientas de configuración para ajustar las propiedades de los dispositivos.
+    \item \textbf{Modo de Simulación:} Se puede observar cómo los paquetes de datos se mueven a través de la red. Se puede controlar la simulación para ver cómo se envían y reciben paquetes en tiempo real, lo que ayuda a depurar problemas de red.
+    \item \textbf{Modo de Realtime:} Es un modo similar al modo de simulación pero sin la visualización detallada de paquetes en movimiento. Ofrece una representación en tiempo real de cómo está funcionando la red, pero sin las capacidades de depuración avanzadas del modo de simulación.
+
+\end{itemize}
+
+\section{Dispositivos finales}
+Los principales dispositivos finales con los que se trabajará durante el cursado son:
+\begin{itemize}
+    \item \textbf{PCs:} Dispositivos de computación fijos que realizan tareas de procesamiento de datos, navegación por internet, y ejecución de aplicaciones. Están conectados a la red para compartir recursos y acceder a servicios.
+    \item \textbf{Laptops:} Dispositivos de computación móviles con batería interna, que permiten realizar tareas similares a las de las PCs pero con mayor flexibilidad para moverse y trabajar desde diferentes ubicaciones.
+    \item \textbf{Servers:} Computadoras especializadas diseñadas para proporcionar servicios, recursos y datos a otros dispositivos en la red, como almacenamiento de archivos, aplicaciones, y bases de datos.
+    \item \textbf{Printers:} Dispositivos que reciben datos desde una computadora o red para producir copias físicas en papel.
+
+\end{itemize}
+\section{Dispositivos de red}
+Los principales dispositivos de red con los que se trabajará durante el cursado son: routers, switches y hubs.
+
+Es importante analizar las características de las diferentes opciones para poder elegir la más adecuada dependiendo del tipo de trabajo.
+\subsection{Routers}
+Hay una gran variedad de routers, y dependiendo el tipo de router se tienen diferentes versiones de IOS, módulos de apliación y tarjetas disponibles.
+
+Las versiones de IOS van desde v12.0 a v16. Solo se explorarán routers con v12 para actividades específicas ya que es una versión muy vieja.
+
+Dentro de las posibilidades disponibles para módulos de ampliación encontramos:
+\begin{itemize}
+    \item Interfaces Seriales y Ethernet: Para agregar puertos adicionales o diferentes tipos de conexiones.
+    \item Módulos de Conectividad: Incluyen opciones para conectar a redes WAN y LAN.
+\end{itemize}
+
+Además, los routers cuentan con tarjetas de red disponibles como FastEthernet, GigabitEthernet, y seriales para diferentes tipos de conexión.
+
+\subsection{Switches}
+
+La variedad de switches disponibles es mucho menor a la de routers. Al igual que los routers tienen diferentes versiones de IOS. 
+
+Poseen tarjetas de red con opciones como FastEthernet y GigabitEthernet. Y también cuentan con módulos de expansión para ampliar la cantidad de puertos y tipos de conexiones disponibles.
+
+\section{Cableado}
+
+\begin{itemize}
+    \item Cable de Consola: Para conectar tu PC a un dispositivo de red para la configuración.
+    \item Cable de Red (Straight-Through y Crossover): Para conectar dispositivos como routers y switches.
+    \item Cable de Fibra: Conexiones de alta velocidad y larga distancia en redes de telecomunicaciones.
+     \item Cable de Teléfono: Conexión de teléfonos y módems a líneas telefónicas.
+    \item Cable Coaxial: Conexión de televisión por cable y sistemas de CCTV.
+    \item Cable Serial (DCE/DTE): para la comunicación entre routers en enlaces seriales.
+    \item Cable Octal: Conexión de equipos de telecomunicaciones de alto rendimiento.
+    \item Cable IoT: Conexión de dispositivos en redes de Internet de las cosas.
+    \item Cable USB: Conexión y transferencia de datos entre dispositivos electrónicos y computadoras.
+\end{itemize}
+
+
+\section{Actividad}
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[scale=0.9]{actividad.png}
+\end{figure}
+La principal limitación es que no es posible conectar una tercera PC sin incluir otras cosas como switchs y hubs. Esto se verá con el avance del cursado
+
+\section{Referencias}
+
+
+\end{document}
